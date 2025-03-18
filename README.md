@@ -7,25 +7,30 @@ What you need to write:
 * HTTP request parser
 * HTTP response builder
 * LRU cache
-  * Doubly linked list (some functionality provided)
-  * Use existing hashtable functionality (below)
+    * Doubly linked list (some functionality provided)
+    * Use existing hashtable functionality (below)
 
-* Your code will interface with the existing code. Understanding the existing
-  code is an expected part of this challenge.
+* Your code will interface with the existing code. Understanding the existing code is an expected part of this
+challenge.
 
 What's already here:
 
 * `net.h` and `net.c` contain low-level networking code
 * `mime.h` and `mime.c` contains functionality for determining the MIME type of a file
-* `file.h` and `file.c` contains handy file-reading code that you may want to utilize, namely the `file_load()` and `file_free()` functions for reading file data and deallocating file data, respectively (or you could just perform these operations manually as well)
-* `hashtable.h` and `hashtable.c` contain an implementation of a hashtable (this one is a bit more complicated than what you built in the Hashtables sprint)
-* `llist.h` and `llist.c` contain an implementation of a doubly-linked list (used solely by the hashable--you don't need it)
+* `file.h` and `file.c` contains handy file-reading code that you may want to utilize, namely the `file_load()` and
+`file_free()` functions for reading file data and deallocating file data, respectively (or you could just perform these
+operations manually as well)
+* `hashtable.h` and `hashtable.c` contain an implementation of a hashtable (this one is a bit more complicated than
+what you built in the Hashtables sprint)
+* `llist.h` and `llist.c` contain an implementation of a doubly-linked list (used solely by the hashable--you don't
+need it)
 * `cache.h` and `cache.c` are where you will implement the LRU cache functionality for days 3 and 4
 
 ## What is a Web Server?
 
-A web server is a piece of software that accepts HTTP requests (e.g. GET
-requests for HTML pages), and returns responses (e.g. HTML pages). Other common uses are GET requests for getting data from RESTful API endpoints, images within web pages, and POST requests to upload data to the server (e.g. a form submission or file upload).
+A web server is a piece of software that accepts HTTP requests (e.g. GET requests for HTML pages), and returns
+responses (e.g. HTML pages). Other common uses are GET requests for getting data from RESTful API endpoints, images
+within web pages, and POST requests to upload data to the server (e.g. a form submission or file upload).
 
 ## Reading
 
@@ -53,7 +58,9 @@ We will write a simple web server that returns files and some specialized data o
 
 Examine the skeleton source code in `server.c` and `cache.c` for which pieces you'll need to implement.
 
-**IMPORTANT** _Spend some time inventorying the code to see what is where. Write down notes. Write an outline. Note which functions call which other functions. Time spent up front doing this will reduce overall time spent down the road._
+**IMPORTANT**: _Spend some time inventorying the code to see what is where. Write down notes. Write an outline. Note
+which functions call which other functions. Time spent up front doing this will reduce overall time spent down the
+road._
 
 _The existing code is all one big hint on how to attack the problem._
 
@@ -65,7 +72,8 @@ Type `./server` to run the server.
 
 ### Main Goals
 
-_Read through all the main and stretch goals before writing any code to get an overall view, then come back to goal #1 and dig in._
+_Read through all the main and stretch goals before writing any code to get an overall view, then come back to goal #1
+and dig in._
 
 #### Part 1
 
