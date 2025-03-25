@@ -26,6 +26,14 @@ what you built in the Hashtables sprint)
 need it)
 * `cache.h` and `cache.c` are where you will implement the LRU cache functionality for days 3 and 4
 
+## How to Run
+
+This project uses CMake to generate Makefiles and automate the compilation of programs. Install CMake, and on Windows,
+with a command prompt opened at the project's root directory, do `cd build` (or if `build` directory hasn't exist yet,
+do `mkdir build`), then do `cmake --preset=default ..` for CMake to configure the build files.
+
+To build, simply `cmake --build .` in the build files.
+
 ## What is a Web Server?
 
 A web server is a piece of software that accepts HTTP requests (e.g. GET requests for HTML pages), and returns
