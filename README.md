@@ -29,7 +29,7 @@ need it)
 ## How to Run
 
 This project uses CMake to generate Makefiles and automate the compilation of programs. Install CMake, and on Windows,
-with a command prompt opened at the project's root directory, do `cd build` (or if `build` directory hasn't exist yet,
+with a command prompt opened at this project's root directory, do `cd build` (or if `build` directory hasn't exist yet,
 do `mkdir build`), then do `cmake --preset=default ..` for CMake to configure the build files.
 
 To build, simply `cmake --build .` in the build files.
